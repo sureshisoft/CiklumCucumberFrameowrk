@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1303" started-at="2022-08-26T03:59:36Z" finished-at="2022-08-26T03:59:37Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ciklum.runner.CiklumTestRunner@5db250b4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="1303" started-at="2022-08-26T03:59:36Z" finished-at="2022-08-26T03:59:37Z">
+      <class name="com.ciklum.runner.CiklumTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.ciklum.runner.CiklumTestRunner@5db250b4]" name="setUpClass" is-config="true" duration-ms="432" started-at="2022-08-26T03:59:36Z" finished-at="2022-08-26T03:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ciklum.runner.CiklumTestRunner@5db250b4]" name="runScenario" duration-ms="802" started-at="2022-08-26T03:59:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-26T03:59:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user should be launch ciklum website and click About us"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User should be able to ciklum Aboutus]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[No suitable driver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: No suitable driver
+at java.sql.DriverManager.getDriver(DriverManager.java:315)
+at com.ciklum.Stepdef.AboutusStepdef.user_should_give_the_ciklum_website(AboutusStepdef.java:31)
+at ✽.User should give the ciklum website(file:///C:/Users/LT-SUKR/eclipse-workspace/CiklumCucumberFramework/src/test/resources/Features/VerifyCiklumAboutus.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ciklum.runner.CiklumTestRunner@5db250b4]" name="runScenario" duration-ms="7" started-at="2022-08-26T03:59:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-26T03:59:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user should launch chromebrowser and validate the Ciklumwebsite title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[user is going to verify Ciklumwebsite title]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.ciklum.Stepdef.CiklumWhatwedoLink.the_user_should_launch_the_chromebrowser(CiklumWhatwedoLink.java:24)
+at ✽.The user should launch the chromebrowser(file:///C:/Users/LT-SUKR/eclipse-workspace/CiklumCucumberFramework/src/test/resources/Features/Verifywhatwedo.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.ciklum.runner.CiklumTestRunner@5db250b4]" name="tearDownClass" is-config="true" duration-ms="19" started-at="2022-08-26T03:59:37Z" finished-at="2022-08-26T03:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ciklum.runner.CiklumTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
